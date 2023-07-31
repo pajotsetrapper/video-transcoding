@@ -15,7 +15,7 @@
 INPUT_FORMAT=[mM][pP]4
 OUTPUT_FORMAT=mp4
 # Change the ffmpeg options as needed
-FFMPEG_OPTIONS="-c:v hevc_nvenc -preset p7 -profile main10 -tune hq -cq 20 -pix_fmt p010le -movflags faststart -map_metadata 0 -c:a copy"
+FFMPEG_OPTIONS="-c:v hevc_nvenc -preset p7 -profile main10 -tune hq -cq 18 -pix_fmt p010le -movflags faststart -map_metadata 0 -c:a copy"
 # Loop through all files in the current folder with the input format
 for file in *.$INPUT_FORMAT; do
   # Get the file name without the extension
